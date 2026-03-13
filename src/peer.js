@@ -8,6 +8,7 @@ const swarm = require('cabal-core/swarm')
 const path = require('path')
 const os = require('os')
 const { EventEmitter } = require('events')
+const { Level } = require('level')
 
 class PeerManager extends EventEmitter {
   constructor(options = {}) {
@@ -31,7 +32,7 @@ class PeerManager extends EventEmitter {
       try {
         // Create cabal instance
         this.cabal = Cabal(this.storagePath, this.cabalKey, {
-          db: require('level')(this.storagePath + '/db')
+          db: Level(this.storagePath + '/db')
         })
 
         this.cabal.ready(() => {
