@@ -1,0 +1,13 @@
+{
+  "id": "openclaw-keet",
+  "name": "OpenClaw Keet P2P Channel",
+  "version": "1.0.0",
+  "description": "P2P messaging channel for OpenClaw using Hypercore protocol",
+  "author": "Jose Neif",
+  "license": "MIT",
+  "homepage": "https://github.com/pepeneif/openclaw-keet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pepeneif/openclaw-keet"
+  }
+}

@@ -1,22 +1,32 @@
 {
   "name": "openclaw-keet",
   "version": "1.0.0",
-  "description": "P2P messaging channel for OpenClaw - TESTED & WORKING",
-  "main": "p2p-simple.js",
+  "description": "P2P messaging channel plugin for OpenClaw using Hypercore protocol",
+  "main": "src/index.ts",
+  "type": "module",
+  "openclaw": {
+    "extensions": ["./src/index.ts"]
+  },
   "scripts": {
     "test": "node p2p-simple.js",
-    "test:cabal": "node p2p-test.js"
+    "test:cabal": "node p2p-test.js",
+    "build": "tsc"
   },
   "dependencies": {
     "hypercore": "^10.0.0",
     "hyperdht": "^6.0.0",
     "hyperswarm": "^2.5.0"
   },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
   "keywords": [
     "openclaw",
     "p2p",
     "messaging",
     "hypercore",
+    "keet",
     "privacy"
   ],
   "author": "",
