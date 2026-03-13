@@ -1,0 +1,40 @@
+{
+  "name": "openclaw-keet",
+  "version": "0.1.0",
+  "description": "P2P messaging channel for OpenClaw using Pear Runtime",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node examples/p2p-test.js",
+    "rebuild": "npm rebuild",
+    "lint": "eslint src/",
+    "dev": "node examples/p2p-test.js"
+  },
+  "keywords": [
+    "openclaw",
+    "p2p",
+    "messaging",
+    "pear",
+    "keet",
+    "hypercore",
+    "privacy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cabal-core": "^9.0.0",
+    "hypercore": "^10.0.0",
+    "hyperdht": "^6.0.0",
+    "hyperswarm": "^2.5.0",
+    "level": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/openclaw-keet"
+  }
+}
